@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <div id="display-wrapper-opt-status" class="top-20">
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="row top-20">
+            <h2>Register Airline</h2>
+        </div>
+        <div class="row top-20">
+            <h4>Register Airline</h4>
+        </div>
+        <div class="row top-20">
+            <input type="text" id="airline-name" style="width: 200px;" placeholder="Airline Name">
+        </div>
+        <div class="row top-20">
+            <input type="text" id="airline-address-1" style="width: 400px;" placeholder="Airline Address to register">
+        </div>
+        <div class="row top-20">
+            <button class="btn btn-primary" id="register-airline">Register</button>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="row top-20">
+            <h4>Airline vote/fund/check status</h4>
+        </div>
+        <div class="row top-20">
+            <input type="text" id="airline-address-2" style="width: 400px;" placeholder="Airline Address to fund/vote/check status">
+        </div>
+        <div class="row top-20">
+            <button class="btn btn-primary" id="fund-airlines" style="margin-right: 10px">Add fund (10 ETH)</button>
+            <button class="btn btn-primary" id="vote-airlines" style="margin-right: 10px">Vote</button>
+            <button class="btn btn-primary" id="check-airline-status" style="margin-right: 10px">Check airline status</button>
+        </div>
+        <div id="display-wrapper-airline" class="top-20">
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="row top-20">
+            <h2>Register Flight</h2>
+        </div>
+        <div class="row top-20">
+            * Airline is msg.sender
+        </div>
+        <div class="row top-20">
+            <input type="text" id="flight-number-1" style="width: 200px;" placeholder="Flight Number" value="SQ322"> Flight number
+        </div>
+        <div class="row top-20">
+            <input type="text" id="timestamp" style="width: 200px;" placeholder="Timestamp" value="20230525"> Timestamp
+        </div>
+        <div class="row top-20">
+            <button class="btn btn-primary" id="register-flight">Register Flight</button>
+        </div>
+
+        <div id="display-wrapper-flight" class="top-20">
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="row top-20">
+            <h2>Flight Insurance</h2>
+        </div>
+        <div class="row top-20">
+            * Passenger is msg.sender
+        </div>
+        <div class="row top-20">
+            <input type="text" id="airline-address-3" style="width: 400px;" placeholder="Airline Address"> Airline
+        </div>
+        <div class="row top-20">
+            <input type="text" id="flight-number-2" style="width: 200px;" placeholder="Flight Number" value="SQ322"> Flight number
+        </div>
+        <div class="row top-20">
+            <input type="text" id="timestamp" style="width: 200px;" placeholder="Timestamp" value="20230525"> Timestamp
+        </div>
+        <div class="row top-20">
+            <input type="text" id="amount" style="width: 200px;" placeholder="Amount" value="0.5"> Passengers may pay up to 1 ether for purchasing flight insurance
+        </div>
+        <div class="row top-20">
+            <button class="btn btn-primary" id="buy-insurance" style="margin-right: 10px">Buy</button>
+            <button class="btn btn-primary" id="fetch-flight-status" style="margin-right: 10px">Fetch Flight Status</button>
+        </div>
+
+        <div id="display-wrapper-flight-insurance" class="top-20">
+        </div>
+    </main>
+
+    <main class="container">
+        <div class="row top-20">
+            <h2>Passenger</h2>
+        </div>
+        <div class="row top-20">
+            * Passenger is msg.sender
+        </div>
+        <div class="row top-20">
+            <button class="btn btn-primary" id="withdraw-credit" style="margin-right: 10px">Withdraw</button>
+            <button class="btn btn-primary" id="check-credit-balance" style="margin-right: 10px">Check credit balance</button>
+        </div>
+
+        <div id="display-wrapper-passenger" class="top-20">
+        </div>
+    </main>
+</body>
+
+</html>
